@@ -1,0 +1,99 @@
+/* Main */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Adobe Fan Heiti Std B, Adobe Garamond Pro Bold, Agency FB-serif;
+}
+
+/* Body of Html */
+body{
+    background: lightpink;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: blue;
+    border: 10px solid orange;
+}
+
+/* MAIN BOX */
+.BOX{
+    background:white;
+    width:380px;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px black;
+    background-color: aqua;
+    border: 5px solid brown;
+}
+
+/* BOX IMAGE */
+.BOX img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    transition:.3s;
+    border: 8.5px solid black;
+}
+
+/* H1 BOX */
+.BOX h1{
+    margin-bottom:10px;
+}
+
+/* PARAGRAPH BOX */
+.BOX p{
+    margin-bottom:15px;
+}
+
+/* SELECT DESIGN */
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid wheat;
+    border-radius:8px;
+}
+
+/* BUTTONS DESIGN */
+.buttons{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+/* BUTTONS DESIGN BOX */
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background: lightblue;
+    color: black;
+    transition:.3s;
+}
+
+button:hover{
+    background: blueviolet;
+}
+
+#resetBtn {
+    background: lightblue;
+}
+
+#resetBtn:hover {
+    background: blueviolet;
+    color: black;
+}
+
+#status{
+    font-weight:bold;
+    color: brown;
+    background-color: black;
+}

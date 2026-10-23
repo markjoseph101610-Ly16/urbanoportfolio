@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 2 - Grades &amp; Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <a href="../index.html#midterm" class="back">← Back to Portfolio</a>
+    </div>
+
+    <div class="header">
+        <h1>My Personal Website</h1>
+        <p>Welcome to my Personal Student Portal</p>
+    </div>
+
+    <div class="Pages">
+        <a href="#grades">Grades</a> |
+        <a href="#registration">Registration</a>
+    </div>
+
+    <!-- GRADES -->
+    <section id="grades" class="section-block">
+        <h2>Student Grade Report</h2>
+
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Subject</th>
+                    <th>Instructor</th>
+                    <th>Units</th>
+                    <th>Grade</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>CS301</td>
+                    <td>Web</td>
+                    <td>Prof. Cruz</td>
+                    <td>3</td>
+                    <td>1.25</td>
+                    <td class="passed">Passed</td>
+                </tr>
+                <tr>
+                    <td>CS302</td>
+                    <td>DB2</td>
+                    <td>Prof. Reyes</td>
+                    <td>3</td>
+                    <td>1.50</td>
+                    <td class="passed">Passed</td>
+                </tr>
+                <tr>
+                    <td>CS303</td>
+                    <td>Net</td>
+                    <td>Prof. Santos</td>
+                    <td>3</td>
+                    <td>1.75</td>
+                    <td class="passed">Passed</td>
+                </tr>
+                <tr>
+                    <td>CS304</td>
+                    <td>EDOOP</td>
+                    <td>Prof. Garcia</td>
+                    <td>3</td>
+                    <td>1.50</td>
+                    <td class="passed">Passed</td>
+                </tr>
+                <tr class="average-row">
+                    <td colspan="2">Average:</td>
+                    <td colspan="4">1.50</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- REGISTRATION -->
+    <section id="registration" class="section-block">
+        <h2>Registration Form</h2>
+
+        <form class="Form">
+            <label>Student Name:</label>
+            <input type="text" name="student_name">
+
+            <label>Email:</label>
+            <input type="text" name="email_name">
+
+            <label>Password:</label>
+            <input type="password" name="password">
+
+            <label>Gender:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+
+            <label>Course:</label>
+            <select name="dropdown">
+                <option value="IT">IT</option>
+                <option value="CS">CS</option>
+                <option value="OA">OA</option>
+                <option value="EDU">EDU</option>
+            </select>
+
+            <label>Skills:</label>
+            <div class="check-row">
+                <label><input type="checkbox"> HTML</label>
+                <label><input type="checkbox"> CSS</label>
+                <label><input type="checkbox"> DEV</label>
+            </div>
+
+            <label>Profile Picture:</label>
+            <input type="file" accept="image/*">
+
+            <label>Address:</label>
+            <textarea rows="5" placeholder="Address here..."></textarea>
+
+            <div class="btn-row">
+                <input type="submit" value="Submit" class="sub">
+                <input type="reset" value="Reset" class="sub">
+            </div>
+        </form>
+    </section>
+
+    <footer class="foot">
+        <h3>@2026 My Personal Website · Laboratory Activity 2</h3>
+    </footer>
+
+</body>
+</html>

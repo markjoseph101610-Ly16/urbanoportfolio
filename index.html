@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Joseph Urbano | BSIT Portfolio</title>
+    <meta name="description" content="Online portfolio of Mark Joseph Urbano, BSIT 31-A. Midterm and finals laboratory activities in HTML, CSS and JavaScript.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="wrap navbar-inner">
+            <a href="#home" class="brand"><span class="brand-mark">MJ</span> Mark Joseph Urbano</a>
+            <nav aria-label="Main">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="wrap home-grid">
+
+            <div class="home-text">
+                <img src="FAM.jpg" alt="Mark Joseph Urbano" class="profile-photo">
+                <h1>Hello, I'm Mark Joseph Urbano</h1>
+                <p class="student-info">BSIT 31-A</p>
+                <p class="lead">Online portfolio for BS Information Technology. Every laboratory activity from midterm to finals, built with HTML, CSS and JavaScript.</p>
+                <div class="home-actions">
+                    <a href="#activities" class="button">View my activities</a>
+                    <a href="#contact" class="button button-ghost">Contact me</a>
+                </div>
+            </div>
+
+            <div class="editor" role="img" aria-label="Code editor showing a student profile object">
+                <div class="editor-bar">
+                    <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                    <span class="editor-file">profile.js</span>
+                </div>
+<pre class="editor-code"><code><span class="k">const</span> <span class="v">student</span> = {
+  <span class="p">name</span>:    <span class="s">"Mark Joseph Urbano"</span>,
+  <span class="p">course</span>:  <span class="s">"BSIT"</span>,
+  <span class="p">section</span>: <span class="s">"31-A"</span>,
+  <span class="p">stack</span>:   [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],
+  <span class="p">tools</span>:   [<span class="s">"Git"</span>, <span class="s">"GitHub"</span>, <span class="s">"Vercel"</span>],
+  <span class="p">midterm</span>: <span class="n">5</span>,
+  <span class="p">finals</span>:  <span class="n">4</span>,
+  <span class="p">status</span>:  <span class="s">"still learning"</span>
+};</code></pre>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="wrap narrow">
+            <h2>About me</h2>
+            <p>
+                I am Mark Joseph Urbano, a BSIT 31-A student who enjoys building websites
+                using HTML, CSS and JavaScript. I am continuously improving my
+                web development skills and learning new technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="wrap">
+            <h2>Skills</h2>
+            <p class="section-note">Languages and tools I use in my laboratory activities.</p>
+            <ul class="skill-list">
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">jQuery</li>
+                <li class="skill">AJAX</li>
+                <li class="skill">Git</li>
+                <li class="skill">GitHub</li>
+                <li class="skill">Vercel</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="activities" id="activities">
+        <div class="wrap">
+            <h2>My activities</h2>
+            <p class="section-note">Pick a term to see its laboratory activities.</p>
+
+            <div class="tabs" role="tablist" aria-label="Term">
+                <button class="tab-btn active" id="tab-midterm" data-target="midterm" role="tab" aria-selected="true" aria-controls="midterm">Midterm <span class="count">5</span></button>
+                <button class="tab-btn" id="tab-finals" data-target="finals" role="tab" aria-selected="false" aria-controls="finals">Finals <span class="count">4</span></button>
+            </div>
+
+            <!-- MIDTERM -->
+            <div class="term" id="midterm" role="tabpanel" aria-labelledby="tab-midterm">
+                <div class="card-grid">
+
+                    <article class="activity-box">
+                        <h3>Laboratory Activity 1</h3>
+                        <p>Purely HTML code.</p>
+                        <div class="card-foot">
+                            <code class="path">activity1/</code>
+                            <a href="activity1/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Laboratory Activity 2</h3>
+                        <p>Website with forms and tables created using HTML and CSS.</p>
+                        <div class="card-foot">
+                            <code class="path">activity2/</code>
+                            <a href="activity2/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Laboratory Activity 3</h3>
+                        <p>Introduction to transitions and external CSS.</p>
+                        <div class="card-foot">
+                            <code class="path">activity3/</code>
+                            <a href="activity3/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Laboratory Activity 4</h3>
+                        <p>Multi-page student portal using semantic HTML, external CSS, Flexbox, forms and tables.</p>
+                        <div class="card-foot">
+                            <code class="path">activity4/</code>
+                            <a href="activity4/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Laboratory Activity 5</h3>
+                        <p>Fix It Phone Repair Shop landing page with services, reviews and contact sections.</p>
+                        <div class="card-foot">
+                            <code class="path">activity5/</code>
+                            <a href="activity5/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- FINALS -->
+            <div class="term" id="finals" role="tabpanel" aria-labelledby="tab-finals" hidden>
+                <div class="card-grid">
+
+                    <article class="activity-box">
+                        <h3>Finals Activity 1</h3>
+                        <p>JavaScript DOM events: click, double click, mouseover, mouse down/up, focus, blur and change.</p>
+                        <div class="card-foot">
+                            <code class="path">finals/activity1/</code>
+                            <a href="finals/activity1/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Finals Activity 2</h3>
+                        <p>Asynchronous JavaScript: setTimeout, callbacks, Promises, chaining and Promise.all.</p>
+                        <div class="card-foot">
+                            <code class="path">finals/activity2/</code>
+                            <a href="finals/activity2/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Finals Activity 3</h3>
+                        <p>jQuery selectors, events, effects and DOM manipulation.</p>
+                        <div class="card-foot">
+                            <code class="path">finals/activity3/</code>
+                            <span class="links">
+                                <a href="finals/activity3/index.html">Open activity</a>
+                                <a href="finals/activity3b/index.html" class="secondary">Part 2</a>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="activity-box">
+                        <h3>Finals Activity 4</h3>
+                        <p>AJAX using XMLHttpRequest to load student information from a text file.</p>
+                        <div class="card-foot">
+                            <code class="path">finals/activity4/</code>
+                            <a href="finals/activity4/index.html">Open activity</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="wrap narrow">
+            <h2>Contact me</h2>
+            <dl class="contact-list">
+                <div><dt>Email</dt><dd><a href="mailto:studentinfo@pdm.com">studentinfo@pdm.com</a></dd></div>
+                <div><dt>Phone</dt><dd><a href="tel:09123456789">0912-345-6789</a></dd></div>
+            </dl>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Mark Joseph Urbano | BSIT 31-A | Student Portfolio</p>
+    </footer>
+
+    <script>
+        (function () {
+            var btns = document.querySelectorAll('.tab-btn');
+            function show(name) {
+                if (name !== 'finals') name = 'midterm';
+                document.querySelectorAll('.term').forEach(function (t) { t.hidden = (t.id !== name); });
+                btns.forEach(function (b) {
+                    var on = b.dataset.target === name;
+                    b.classList.toggle('active', on);
+                    b.setAttribute('aria-selected', on ? 'true' : 'false');
+                });
+            }
+            btns.forEach(function (b) {
+                b.addEventListener('click', function () {
+                    show(b.dataset.target);
+                    history.replaceState(null, '', '#' + b.dataset.target);
+                });
+            });
+            var h = location.hash.replace('#', '');
+            if (h === 'finals' || h === 'midterm') {
+                show(h);
+                document.getElementById('activities').scrollIntoView();
+            }
+        })();
+    </script>
+
+</body>
+</html>

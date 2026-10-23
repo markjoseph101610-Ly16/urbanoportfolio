@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 4 - Registration</title>
+    <link rel="stylesheet" href="Extension.css">
+</head>
+<body>
+    <div style="background:#0f151c;padding:12px 8%;text-align:left;font-family:Arial,sans-serif"><a href="../index.html#midterm" style="color:#aed6f1;text-decoration:none;font-weight:bold">← Back to Portfolio</a></div>
+    <div class="header"> 
+        <h1>My Personal Website</h1>
+        <p>Welcome to my Personal Student Portal</p>
+    </div>
+
+    <div class="Pages">|
+        <a href="Home.html">Home</a>|
+        <a href="Registration.html">Registration</a>|
+        <a href="Grades.html">Grades</a>|
+        <a href="Profile.html">Profile</a>|
+    </div>
+
+    <div>
+        <form class="Form">
+            Student Name:
+            <br>
+            <input type="text" name="student_name"/>
+            <br>
+
+            Email:
+            <br>
+            <input type="text" name="email_name"/>
+            <br>
+
+            Password:
+            <br>
+            <input type="password" name="password"/>
+            <br>
+
+            Gender
+            <br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Male">Female
+            <br>
+
+            Course
+            <br>
+            <select name="dropdown">
+                <option value="IT" selected>IT</option>
+                <option value="CS" selected>CS</option>
+                <option value="OA" selected>OA</option>
+                <option value="EDU" selected>EDU</option>
+                <option value="IT" selected> </option>
+            </select>
+            <br>
+
+            Skills
+            <br>
+            <input type="checkbox" name="HTML" value="on">HTML
+            <input type="checkbox" name="CSS" value="on">CSS
+            <input type="checkbox" name="DEV" value="on">DEV
+            <br>
+
+            Profile Picture
+            <br>
+            <input type="file" name="Choose File" accept="image"/>
+            <br>
+
+            Address
+            <br>
+            <textarea rows="5" cols="50" name="Address" placeholder="address here"></textarea>
+            <br>
+
+            
+            <input type="submit" name="submit" value="submit" class="sub"/>
+            <input type="reset" name="reset" value="reset" class="sub"/>
+
+
+        
+        </form>
+    </div>
+    
+</body>
+</html>

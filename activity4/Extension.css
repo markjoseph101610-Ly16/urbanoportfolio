@@ -1,0 +1,85 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    margin-top: 10px;
+    background-color: aqua;
+    text-align: center;
+    padding: 50px;
+}
+
+.Pages{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+#sec{
+    margin-top: 10px;
+    background-color: yellow;
+    padding: 20px;
+    flex:  3;
+}
+
+#asi{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: green;
+    display: flex; flex: 1;
+}
+
+.foot{
+    padding: 30px;
+    background-color: lightslategrey;
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.Form{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.Student{
+    text-align: left;
+}
+
+.sub{
+    background-color: lightblue;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.tab{
+    background-color: gray;
+    justify-content: center;
+    
+
+}
+input[type="text"]{
+    width: 500px;
+
+}
+
+input[type="password"]{
+    width: 500px;
+
+}
+.All{
+    justify-content: flex;
+    padding: 100px;
+    background-color: cadetblue;
+}

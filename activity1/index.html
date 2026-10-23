@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 1 - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <a href="../index.html#midterm" class="back">← Back to Portfolio</a>
+    </div>
+
+    <div class="header">
+        <h1>Welcome to My Personal Website</h1>
+        <nav class="menu">
+            <a href="#info">My Information</a> |
+            <a href="#journal">Journal</a> |
+            <a href="#others">Others</a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <!-- MY INFORMATION -->
+        <section id="info" class="card">
+            <h2>My Information</h2>
+
+            <div class="profile-row">
+                <div class="photo">
+                    <span>📷 Profile</span>
+                </div>
+                <div class="details">
+                    <p><b>Name:</b> Mark Joseph Urbano</p>
+                    <p><b>Age:</b> 19</p>
+                    <p><b>Hobbies:</b> Assemble a phone</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>School Information</h3>
+            <p><b>Course:</b> BSIT</p>
+            <p><b>Section:</b> 31A</p>
+            <p><b>Address:</b> Abangan Norte</p>
+        </section>
+
+        <!-- JOURNAL -->
+        <section id="journal" class="card">
+            <h2>My Journal</h2>
+
+            <h3>My Hobbies</h3>
+            <ul>
+                <li>Study Web</li>
+                <li>Study Py</li>
+                <li>Study Java</li>
+            </ul>
+
+            <h3>Web Terms</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Hyper Text Mark Up Language</dd>
+            </dl>
+
+            <h3>My Favorite Food</h3>
+            <ul>
+                <li>Filipino Food
+                    <ol>
+                        <li>Adobo</li>
+                        <li>Menudo</li>
+                        <li>Sinigang</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <!-- OTHERS -->
+        <section id="others" class="card">
+            <h2>Others</h2>
+
+            <h3>My Other Me</h3>
+            <p><b>My Parish:</b> Parokya ng Muling Pagkabuhay</p>
+            <p><b>Year being sakristan:</b> 12</p>
+
+            <hr>
+
+            <h3>My Shop</h3>
+            <p><b>Name shop:</b> MJ Repair Shop</p>
+            <p><b>My level:</b> 80%</p>
+
+            <marquee class="marquee-text">ETO NA KAYA KO SIR</marquee>
+
+            <div class="login-box">
+                <h3>Login</h3>
+                <input type="text" id="user" placeholder="Username">
+                <input type="password" id="pass" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <p id="msg"></p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Created by: Mark Joseph Urbano &lt;3 · Laboratory Activity 1</p>
+    </footer>
+
+    <script>
+        function login() {
+            const u = document.getElementById("user").value;
+            const p = document.getElementById("pass").value;
+            if (u === "mj" && p === "mj") {
+                document.getElementById("msg").textContent = "✅ Login successful!";
+                document.getElementById("msg").style.color = "green";
+            } else {
+                document.getElementById("msg").textContent = "❌ Mali ang password";
+                document.getElementById("msg").style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>

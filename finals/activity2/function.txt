@@ -1,0 +1,105 @@
+function showMessage(text){
+    message.innerHTML = text
+}
+
+Button.addEventListener("click", function(){
+    message.innerHTML = "Loading....."
+
+    setTimeout(function(){
+        showMessage("Welcome to Java Script!")
+    },3000)
+})
+
+--------------------------------------------
+
+function showMessage(){
+     return new Promise(function(resolve){
+        setTimeout(function(){
+            resolve("Checking Account..!")
+        }, 2000)
+    })
+}
+
+Button.addEventListener("click", function(){
+    message.innerHTML = "Loading!"
+    
+     showMessage()
+
+    .then(function(result){
+        message.innerHTML = result
+    })
+
+    .catch(function(error){
+        message.innerHTML = error
+    });
+})
+--------------------------------------------
+
+
+function showMessage(){
+     return new Promise(function(resolve){
+        setTimeout(function(){
+            resolve("Checking Account..!")
+        }, 2000)
+    })
+}
+
+Button.addEventListener("click", function(){
+    message.innerHTML = "Loading!"
+    
+     showMessage()
+
+    .then(function(result){
+        message.innerHTML = result
+
+        return new Promise(function(resolve){
+            setTimeout(function(){
+                resolve("Loading Profile...")
+            }, 3000)
+        })
+
+        .then(function(result){
+            message.innerHTML = result
+
+            return new Promise(function(resolve){
+                setTimeout(function(){
+                    resolve("Welcome!")
+                }, 3000)
+            })
+        })
+
+         .then(function(result){
+            message.innerHTML = result
+        })
+    })
+})
+
+-----------------------------------
+
+function loadMessage(){
+    return new Promise(function(resolve,reject){
+        setTimeout(function(){
+
+            let success = true
+
+            if(success){
+                resolve("Welcome to PDM!")
+            }else{
+                reject("Failed to load!")
+            }
+        },3000)
+    })
+}
+
+Button.addEventListener("click" , function(){
+    message.innerHTML = "Loading....."
+    loadMessage()
+
+    .then(function(result){
+        message.innerHTML = result
+    })
+
+    .catch(function(error){
+        message.innerHTML = error
+    });
+})

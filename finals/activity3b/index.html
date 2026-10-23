@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Activity 3 (Part 2) - jQuery Student Profile</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+    <style>
+
+        #Profile{
+            color: white;
+        }
+
+        .card1{
+            background-color:  rgba(80, 35, 17, 0.486);
+            margin: auto;
+            padding: 20px;
+            border-radius: 25px;
+            border: solid 5px burlywood;
+            color: black;
+        }
+        .card{
+            background-color: rgba(165, 97, 42, 0.904);
+            margin: auto;
+            padding: 20px;
+            border-radius: 25px;
+            border: solid 5px burlywood;
+            color: black;
+        }
+        .card2{
+            background-color: rgba(80, 35, 17, 0.486);
+            margin: auto;
+            padding: 20px;
+            border-radius: 25px;
+            border: solid 5px burlywood;
+            color: black;
+        }
+        button{
+            background-color: rgb(167, 121, 79);
+            color: white;
+            padding: 5px 10px;
+            border: solid 1px rgb(31, 23, 14);
+            border-radius: 5px;
+        }
+        select{
+            width: 100%;  
+            height: 20px;
+            border-radius: 10px;
+        }
+        .Choose{
+            color: white;
+        }
+        .List{
+            color: white    ;
+        }
+        table{
+            width: 100%;
+            height: 50%;
+            border-radius: 5px;
+        }
+        th{
+            background-color: rgba(165, 97, 42, 0.904);
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+<body>
+<div style="background:#0f151c;padding:12px 8%;text-align:left;font-family:Arial,sans-serif"><a href="../../index.html#finals" style="color:#aed6f1;text-decoration:none;font-weight:bold">← Back to Portfolio</a></div>
+    <div class="card">
+        <center>
+            <h1 id="title"> My Student Profile </h1>
+            <p class="intro"> Welcome to my interactive profile! </p>
+        </center>
+        <div class="card1">
+        <div id="Profile">
+            <h1> Student Information </h1>
+            <p> Name: <b>Mark Joseph Urbano</b></p>
+            <p> Course: <b id="message"> BSIT  </b></p>
+            <p> Year Level: <b> 3rd Year </b></p>
+        </div> 
+        </div>
+        <center>
+            <br>
+            <p id="message2">Output: </p>
+            <button id="btn"> Change Title </button>
+            <button id="btnHide"> Hide Profile </button>
+            <button id="btnShow"> Show Profile </button>
+       
+        </center>
+        <br>
+        <div class="card1">
+
+        <h1 class="Choose">Choose Your Course</h1>
+        <select id="course">
+            <option value=""> Select Course </option>
+            <option value="BSIT"> BSIT </option>
+            <option value="BSCS"> BSCS </option>
+            <option value="BSOA"> BSOA </option>
+            <option value="BSIS"> BSIS </option>
+        </select>
+
+        <p id="message1" style="color: white;"> No Course Selected</p>
+
+        </div>
+
+        <br>
+
+        <div class="card2">
+        <center>
+            <b> <h1 class="List">Student List</h1> </b>
+            <p style="color: white;">Register Student</p>
+        <table border="2" id="table1">
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year Level</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Juan</td>
+                <td>BSIT</td>
+                <td>3rd Year</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>BSCS</td>
+                <td>3rd Year</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Pedro</td>
+                <td>BSIS</td>
+                <td>2nd Year</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Ana</td>
+                <td>BSIT</td>
+                <td>3Rd Year</td>
+            </tr>
+        </table>
+        </center>
+
+        </div>
+
+            <center>
+        <br>
+        <button id="btnHidess"> Odd</button>
+        <button id="btnShowss"> Even</button>
+        <button id="btnHides"> Hide</button>
+        <button id="btnShows"> Show </button>
+
+        </center>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
